@@ -4,7 +4,6 @@ import { ThemeContextProvider } from "./utils/ThemeContext";
 function App() {
   return (
     <ThemeContextProvider>
-      Hello
       <Navbar />
     </ThemeContextProvider>
   );

@@ -7,7 +7,7 @@ const Navbar = () => {
   const { theme, handleToggleTheme } = useContext(ThemeContext);
 
   return (
-    <nav>
+    <nav className="nav">
       <div className="container nav__container">
         <div className="logo">devfinder</div>
         <div className="theme" onClick={handleToggleTheme}>
