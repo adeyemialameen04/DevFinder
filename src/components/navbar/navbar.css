@@ -1,0 +1,26 @@
+.nav {
+    padding-block: 1.5rem;
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: .5rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.theme {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.theme-icon {
+    font-size: 1.3rem;
+}
