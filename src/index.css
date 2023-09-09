@@ -22,6 +22,7 @@
     font: inherit;
 
     --clr-dark-background: hsl(220, 40%, 13%);
+    --clr-light-background: hsl(227, 100%, 98%);
     --clr-white: #fff;
     --clr-black: #000;
 
@@ -51,8 +52,6 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     font-family: 'Space Mono', monospace;
-    background-color: var(--clr-dark-background);
-    color: var(--clr-white);
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,6 +70,20 @@ svg {
 .container {
     width: var(--container-md);
     margin: 0 auto;
+}
+
+#dark, #light {
+    min-height: 100vh;
+}
+
+#dark {
+    background-color: var(--clr-dark-background);
+    color: var(--clr-white);
+}
+
+#light {
+    background-color: var(--clr-light-background);
+    color: var(--clr-black);
 }
 
 @media (min-width:780px) {
