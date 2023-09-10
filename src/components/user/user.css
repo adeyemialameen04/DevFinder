@@ -1,0 +1,27 @@
+.user__container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    padding-block: 3rem;
+    padding-inline: 2rem;
+    background-color: var(--card);
+    gap: 2rem;
+}
+
+.profile-img-container img {
+    object-fit: cover;
+    max-height: 220px;
+    border-radius: 50%;
+}
+
+.user-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width:780px) {
+    .user__container {
+        max-width: 60%;
+    }
+}

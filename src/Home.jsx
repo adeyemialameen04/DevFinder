@@ -2,6 +2,7 @@ import React from "react";
 import useFetchData from "./utils/useFetchData";
 import { useEffect } from "react";
 import Header from "./components/header/Header";
+import User from "./components/user/User";
 
 const Home = () => {
   const { data, isLoading, isError, error } = useFetchData("adeyemialameen04");
@@ -13,9 +14,10 @@ const Home = () => {
   }, [data]);
 
   return (
-    <div>
-      <Header />
-    </div>
+    <main>
+      <Header loading={isLoading} />
+      <User user={data} />
+    </main>
   );
 };
 
