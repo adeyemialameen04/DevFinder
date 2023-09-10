@@ -1,3 +1,4 @@
+import Home from "./Home";
 import Header from "./components/header/Header";
 import Loader from "./components/loader/Loader";
 import Navbar from "./components/navbar/navbar";
@@ -7,7 +8,7 @@ function App() {
   return (
     <ThemeContextProvider>
       <Navbar />
-      <Header />
+      <Home />
     </ThemeContextProvider>
   );
 }
