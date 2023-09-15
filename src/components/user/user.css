@@ -1,6 +1,6 @@
 .user__container {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: space-between;
     padding-block: 3rem;
     padding-inline: 2rem;
@@ -10,18 +10,76 @@
 
 .profile-img-container img {
     object-fit: cover;
-    max-height: 220px;
+    max-width: 140px;
     border-radius: 50%;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.name h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: start;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 .user-details {
     flex: 2;
     display: flex;
+    /* flex-direction: column; */
+    gap: 1rem;
+}
+
+.stats {
+    background-color: hsl(222, 40%, 13%);
+    padding-block: 1.5rem;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.stats h3 {
+    font-weight: 300;
+    display: flex;
     flex-direction: column;
+    font-size: .9rem;
+}
+
+.stats h3 span {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+@media (min-width:500px) {
+    .top {
+        align-items: start;
+        flex-direction: row;
+    }
 }
 
 @media (min-width:780px) {
     .user__container {
         max-width: 60%;
+        /* flex-direction: row; */
+        align-items: start;
+    }
+
+    .name {
+        gap: .8rem;
     }
 }
